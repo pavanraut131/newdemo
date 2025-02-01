@@ -1,35 +1,35 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
+    padding: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2em;
     text-align: center;
-}
-
-h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.container {
-    width: 80%;
-    margin: 20px auto;
-}
-
-button {
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
+    animation: fadeIn 2s ease-in-out, colorChange 4s infinite alternate;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes colorChange {
+    from {
+      color: #333;
+    }
+    to {
+      color: #ff6347;
+    }
+  }
