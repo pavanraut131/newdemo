@@ -4,6 +4,7 @@ let button = document.querySelector("button");
 button.addEventListener("click", () => {
   console.log("button clicked");
   digit = Number(digit) + 1;
+  console.log(digit);
   document.querySelector(".num").textContent = digit;
 });
 
