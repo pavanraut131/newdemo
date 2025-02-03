@@ -1,30 +1,30 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #333;
+  font-size: 2em;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out, colorChange 4s infinite alternate;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  h1 {
-    color: #333;
-    font-size: 2em;
-    text-align: center;
-    animation: fadeIn 2s ease-in-out, colorChange 4s infinite alternate;
+  to {
+    opacity: 1;
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-<<<<<<< Updated upstream
+}
+
   
   @keyframes colorChange {
     from {
@@ -34,33 +34,24 @@ body {
       color: #ff6347;
     }
   }
-=======
-}
+ {
 
-@keyframes colorChange {
-  from {
-    color: #333;
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
-  to {
-    color: #ff6347;
-  }
-}
-button {
-  background-color: #4caf50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
 
-button:hover {
-  background-color: #45a049;
-  transform: scale(1.1);
-}
->>>>>>> Stashed changes
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+
